@@ -4,7 +4,7 @@ import streamlit as st
 import os
 from PIL import Image
 import google.generativeai as genai
-genai.configure(api_key=os.getenv("your api key"))
+genai.configure(api_key=os.getenv("Key"))
 model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest")
 
 def get_gemini_response(input,image,prompt):
